@@ -51,3 +51,8 @@ ul {
   list-style: disc outside none;
   margin-left: 40px;
 }
+
+ol {
+  list-style: decimal;
+  margin-left: 40px;
+}
