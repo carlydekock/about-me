@@ -7,9 +7,11 @@ I built a website with facts about me, in the form of a guessing game for the us
 ### Author: Carly Dekock
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [Link to site](https://carlydekock.github.io/about-me/)
+* Used W3Schools for reference
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+* This was a great exercise to walk through the process.
+* I feel more comfortable with using prompts in JavaScript, and with styling in CSS.
+* It was good to see the process of styling in CSS from scratch when using the reset.css file.
+* I can see how long you can spend on styling, really important to keep track of what the goals and objectives are.
