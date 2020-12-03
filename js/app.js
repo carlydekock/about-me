@@ -107,6 +107,10 @@ for (var i = 0; i < numberGuesses; i++){
 //Give user four opportunities to get the correct answer
 
 
+
+
+
+
 // //Question 7
 // //multiple answers in an array
 // var answersColor = ['blue', 'aqua', 'teal', 'sky'];
@@ -137,3 +141,4 @@ for (var i = 0; i < numberGuesses; i++){
 // Instructions #4 - Final score
 // each correct answer, add one to the count
 // could also do this with a boolean maybe, if correct it is true, count of number of true values total?
+
