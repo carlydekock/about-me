@@ -1,8 +1,9 @@
-# LAB - 2
+# LAB - 3
 
-## About Me, with a guessing game
+## About Me 
 
 I built a website with facts about me, in the form of a guessing game for the user to interact and learn more about me.
+I added in prompts for user input of a guessing game, for the user to guess a number. They have a set number of tries, which exists in a loop with feedback of higher or lower for their guesses.
 
 ### Author: Carly Dekock
 
@@ -11,7 +12,5 @@ I built a website with facts about me, in the form of a guessing game for the us
 * Used W3Schools for reference
 
 ### Reflections and Comments
-* This was a great exercise to walk through the process.
-* I feel more comfortable with using prompts in JavaScript, and with styling in CSS.
-* It was good to see the process of styling in CSS from scratch when using the reset.css file.
-* I can see how long you can spend on styling, really important to keep track of what the goals and objectives are.
+* This offered great practice with loops.
+* I struggled with arrays, and how to loop within an array to search for a value.
