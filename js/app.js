@@ -3,7 +3,7 @@
 var userName = prompt('What is your name?');
 // console.log('The user name is ' + userName + '!');
 
-//TODO - create personalized welcome message with userName
+// TODO - create personalized welcome message with userName
 //document.write('Hi ' + userName + ', thanks for visiting my site!');
 alert('Hi ' + userName + ', thanks for visiting my site!');
 
@@ -89,6 +89,7 @@ for (var i = 0; i < numberGuesses; i++){
     alert('Great guess, you are correct!');
     break;
   }
+  //Respond to user if guess is too high or too low
   if (userGuess < correctAnswer && i !== 3){
     alert('Too low, guess again');
   } else if (userGuess > correctAnswer && i !== 3){
@@ -103,5 +104,36 @@ for (var i = 0; i < numberGuesses; i++){
   }
   console.log(i);
 }
-//Respond to user if guess is too high or too low
 //Give user four opportunities to get the correct answer
+
+
+// //Question 7
+// //multiple answers in an array
+// var answersColor = ['blue', 'aqua', 'teal', 'sky'];
+// var guessMax = 6;
+// var guessDone = false;
+// var guessCount = 0;
+// //user gets 6 attempts to guess the correct answer
+// //while guesscount less than guess max keep running
+// //search array for input value to see if matches
+// //if it does - you're correct and break
+// //if it doesn't - loop again to allow another guess, until run out of guesses
+// //to display all correct answers, could use an alert, or a loop to output array values one at a time until it reaches the end
+
+// for (var j = 0; j < guessMax; j++){
+//   var currentGuess = prompt('What do you think my favorite colors are?');
+//   console.log(currentGuess);
+//   console.log(j);
+//   var currentGuess = answersColor[j];
+//   for (var k = 0; k < guessMax; k++){
+//     if(currentGuess === )
+//   }
+//   // for (var k = 0; k < answersColor.length; k++){
+//   //   console.log(answersColor[k]);
+//   // }
+
+// }
+
+// Instructions #4 - Final score
+// each correct answer, add one to the count
+// could also do this with a boolean maybe, if correct it is true, count of number of true values total?
