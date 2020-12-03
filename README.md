@@ -12,5 +12,6 @@ I added in prompts for user input of a guessing game, for the user to guess a nu
 * Used W3Schools for reference
 
 ### Reflections and Comments
+* Driver: Jason Dormier Navigator: Carly Dekock, Pair programming functions.
 * This offered great practice with loops.
 * I struggled with arrays, and how to loop within an array to search for a value.
