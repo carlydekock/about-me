@@ -72,3 +72,36 @@ if (favoriteSeason === 'yes' || favoriteSeason === 'y'){
 //TODO - if it works, comment out console.log, send alert to user
 
 alert('Thanks for answering all these questions ' + userName + ', I appreciate you wanting to know a bit more about me!');
+
+//Question Six
+//Set the correct number, number that will win the guessing game
+//Set the number of guesses that will be allowed
+var correctAnswer = 19;
+var numberGuesses = 4;
+//Prompt user to guess a number and take numeric input
+// var userGuess = prompt('Guess a number between 1 and 20');
+console.log(userGuess);
+//Evaluate guess against correct number
+for (var i = 0; i < numberGuesses; i++){
+  var userGuess = parseInt(prompt('Guess a number between 1 and 20'));
+  console.log(userGuess);
+  if (userGuess === correctAnswer){
+    alert('Great guess, you are correct!');
+    break;
+  }
+  if (userGuess < correctAnswer && i !== 3){
+    alert('Too low, guess again');
+  } else if (userGuess > correctAnswer && i !== 3){
+    alert('Too high, guess again');
+    // if (userGuess > 19 && i < numberGuesses) {
+    //   alert('too high, guess again');
+    // } else {
+    //   alert('too low');
+    // }
+  } else {
+    alert(`You are wrong, correct answer is ${correctAnswer}`);
+  }
+  console.log(i);
+}
+//Respond to user if guess is too high or too low
+//Give user four opportunities to get the correct answer
