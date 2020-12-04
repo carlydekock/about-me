@@ -32,7 +32,7 @@ function questionTwo() {
   } else {
     alert('You\'re wrong, I am 30 years old.');
   }
-  //TODO - if it works, comment out console.log, send alert to user  
+  //TODO - if it works, comment out console.log, send alert to user
 }
 
 function questionThree() {
@@ -121,36 +121,33 @@ for (var i = 0; i < numberGuesses; i++) {
 
 
 
+// Question 7
+// multiple answers in an array
+var answersColor = ['blue', 'aqua', 'teal', 'sky'];
+var guessCount = 0;
+var guessMax = 6;
+var guessCorrect = false;
+// console.log(answersColor);
+//Loop while user has not guessed correct and they have guesses left
+while (!guessCorrect && guessCount < guessMax) {
+  guessCount++;
+  var question = prompt('What are my favorite colors?');
+  // console.log(question);
+  // console.log(guessCount);
+  for (var j = 0; j < answersColor.length; j++) {
+    if (question === answersColor[j]) {
+      alert('That is correct!');
+      guessCorrect = true;
+      break;
+    }
+  }
+  if (!guessCorrect) {
+    alert('Sorry, that\'s not it.');
+  }
+}
 
-
-// //Question 7
-// //multiple answers in an array
-// var answersColor = ['blue', 'aqua', 'teal', 'sky'];
-// var guessMax = 6;
-// var guessDone = false;
-// var guessCount = 0;
-// //user gets 6 attempts to guess the correct answer
-// //while guesscount less than guess max keep running
-// //search array for input value to see if matches
-// //if it does - you're correct and break
-// //if it doesn't - loop again to allow another guess, until run out of guesses
-// //to display all correct answers, could use an alert, or a loop to output array values one at a time until it reaches the end
-
-// for (var j = 0; j < guessMax; j++){
-//   var currentGuess = prompt('What do you think my favorite colors are?');
-//   console.log(currentGuess);
-//   console.log(j);
-//   var currentGuess = answersColor[j];
-//   for (var k = 0; k < guessMax; k++){
-//     if(currentGuess === )
-//   }
-//   // for (var k = 0; k < answersColor.length; k++){
-//   //   console.log(answersColor[k]);
-//   // }
-
-// }
+alert(`Thanks for playing the guessing game ${userName}!`);
 
 // Instructions #4 - Final score
 // each correct answer, add one to the count
-// could also do this with a boolean maybe, if correct it is true, count of number of true values total?
 
