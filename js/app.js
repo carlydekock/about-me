@@ -1,6 +1,7 @@
 'use strict';
 
 var userName = prompt('What is your name?');
+var correctAnswersTotal = 0;
 // console.log('The user name is ' + userName + '!');
 
 // TODO - create personalized welcome message with userName
@@ -14,6 +15,7 @@ function questionOne() {
   //TODO - console.log the answer if it is correct, in a string concatenation
   if (homeTown === 'yes' || homeTown === 'y') {
     // console.log(userName + ' says ' + homeTown + ', I live in Seattle.');
+    correctAnswersTotal++;
     alert('That\'s correct!');
   } else {
     alert('You\'re wrong, I am from Seattle.');
@@ -28,6 +30,7 @@ function questionTwo() {
   //TODO - console.log the answer if it is correct, in a string concatenation
   if (myAge === 'yes' || myAge === 'y') {
     // console.log(userName + ' answered ' + myAge + ', I am 30 years old.');
+    correctAnswersTotal++;
     alert('That\'s correct!');
   } else {
     alert('You\'re wrong, I am 30 years old.');
@@ -42,6 +45,7 @@ function questionThree() {
   //TODO - console.log the answer if it is correct, in a string concatenation
   if (favoriteHobby === 'yes' || favoriteHobby === 'y') {
     // console.log(userName + ' answered correctly, I do enjoy skiing.');
+    correctAnswersTotal++;
     alert('You are correct, I do!');
   } else {
     alert('You are wrong, I do enjoy it!');
@@ -57,6 +61,7 @@ function questionFour() {
   if (favoriteAnimal === 'no' || favoriteAnimal === 'n') {
     // console.log('Great job ' + userName + ', you are right! Dogs are better!');
     alert('You\'re right, dogs are better!');
+    correctAnswersTotal++;
   } else {
     alert('You are wrong, I like dogs better.');
   }
@@ -71,6 +76,7 @@ function questionFive() {
   if (favoriteSeason === 'yes' || favoriteSeason === 'y') {
     // console.log('Right you are ' + userName + '! I do love summer.');
     alert('That\'s correct!');
+    correctAnswersTotal++;
   } else {
     alert('Nope, you are wrong.');
   }
@@ -98,6 +104,7 @@ for (var i = 0; i < numberGuesses; i++) {
   var userGuess = parseInt(prompt('Guess a number between 1 and 20'));
   console.log(userGuess);
   if (userGuess === correctAnswer) {
+    correctAnswersTotal++;
     alert('Great guess, you are correct!');
     break;
   }
@@ -136,6 +143,7 @@ while (!guessCorrect && guessCount < guessMax) {
   // console.log(guessCount);
   for (var j = 0; j < answersColor.length; j++) {
     if (question === answersColor[j]) {
+      correctAnswersTotal++;
       alert('That is correct!');
       guessCorrect = true;
       break;
@@ -146,7 +154,7 @@ while (!guessCorrect && guessCount < guessMax) {
   }
 }
 
-alert(`Thanks for playing the guessing game ${userName}!`);
+alert(`Thanks for playing the guessing game ${userName}! Out of 7 questions you got ${correctAnswersTotal} correct!`);
 
 // Instructions #4 - Final score
 // each correct answer, add one to the count
