@@ -10,6 +10,7 @@ I added in prompts for user input of a guessing game, for the user to guess a nu
 * [Link to site](https://carlydekock.github.io/about-me/)
 * Used W3Schools for reference
 * 12/3 // After code review, I switched up my code quite a bit to accomplish the addition of question 7 (Lab 3) as well as the count of all correct answers.
+* 12/3 // Jason Dormier: Collaborator on pair programming and creating functions for guessing game questions.
 
 ### Reflections and Comments
 * 12/3 // Driver: Jason Dormier Navigator: Carly Dekock, Pair programming functions.
