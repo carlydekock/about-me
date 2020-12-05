@@ -154,6 +154,10 @@ while (!guessCorrect && guessCount < guessMax) {
   }
 }
 
+if (!guessCorrect){
+  alert(`The correct answers are ${answersColor[0]}, ${answersColor[1]}, ${answersColor[2]}.`);
+}
+
 alert(`Thanks for playing the guessing game ${userName}! Out of 7 questions you got ${correctAnswersTotal} correct!`);
 
 // Instructions #4 - Final score
